@@ -28,7 +28,7 @@ export default function Header() {
             </a>
             <span className="hidden sm:flex items-center gap-2 text-primary-200">
               <Clock size={18} />
-              <span>24/7 Emergency Response</span>
+              <span>Fast, Professional Service</span>
             </span>
           </div>
           <Link

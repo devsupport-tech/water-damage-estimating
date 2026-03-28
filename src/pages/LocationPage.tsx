@@ -229,8 +229,8 @@ export default function LocationPage() {
                       <Clock className="text-primary-300" size={24} />
                     </div>
                     <div>
-                      <div className="font-semibold">24/7 Emergency Response</div>
-                      <div className="text-primary-300">We're here when you need us</div>
+                      <div className="font-semibold">Fast, Thorough Service</div>
+                      <div className="text-primary-300">Quality work you can count on</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">

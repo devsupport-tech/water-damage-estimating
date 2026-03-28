@@ -40,7 +40,7 @@ export const locations: Location[] = [
     ],
     nearbyAreas: ['Katy', 'Sugar Land', 'The Woodlands', 'Pearland'],
     metaTitle: 'Water Damage Estimating Houston TX | Independent Xactimate Estimates',
-    metaDescription: 'Professional water damage estimates for Houston homeowners. Get independent Xactimate estimates to maximize your insurance claim. 24/7 emergency service.'
+    metaDescription: 'Professional water damage estimates for Houston homeowners. Get independent Xactimate estimates to maximize your insurance claim. Quality service you can trust.'
   },
   {
     slug: 'katy',
