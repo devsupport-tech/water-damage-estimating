@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Phone, Mail, MapPin, Clock, CheckCircle, AlertTriangle, FileText, Users, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, CheckCircle, AlertTriangle, FileText, Users, ArrowRight, ChevronDown, ChevronUp, Facebook, Instagram, Youtube } from 'lucide-react'
 
 function App() {
   const [formData, setFormData] = useState({
@@ -53,9 +53,10 @@ function App() {
       <header className="bg-primary-900 text-white py-3">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
           <div className="flex items-center gap-6">
-            <a href="tel:8329392727" className="flex items-center gap-2 hover:text-primary-200 transition-colors">
+            <span className="text-primary-200 text-sm hidden md:block">A CBRS Group Company</span>
+            <a href="tel:8326080535" className="flex items-center gap-2 hover:text-primary-200 transition-colors">
               <Phone size={18} />
-              <span className="font-semibold">(832) 939-2727</span>
+              <span className="font-semibold">(832) 608-0535</span>
             </a>
             <span className="hidden sm:flex items-center gap-2 text-primary-200">
               <Clock size={18} />
@@ -95,7 +96,7 @@ function App() {
                 Get Your Free Estimate <ArrowRight size={20} />
               </a>
               <a
-                href="tel:8329392727"
+                href="tel:8326080535"
                 className="border-2 border-white hover:bg-white hover:text-primary-900 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2"
               >
                 <Phone size={20} /> Call Now
@@ -519,10 +520,10 @@ function App() {
               Get Your Free Estimate
             </a>
             <a
-              href="tel:8329392727"
+              href="tel:8326080535"
               className="border-2 border-white text-white hover:bg-white hover:text-accent px-8 py-4 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2"
             >
-              <Phone size={20} /> (832) 939-2727
+              <Phone size={20} /> (832) 608-0535
             </a>
           </div>
         </div>
@@ -531,20 +532,22 @@ function App() {
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <h3 className="text-white font-bold text-lg mb-4">Water Damage Estimating</h3>
               <p className="mb-4">
                 Professional Xactimate estimates for Houston homeowners.
                 Get the fair insurance settlement you deserve.
               </p>
-              <p className="text-sm">A service of CBRS Group</p>
+              <a href="https://cbrsgroup.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 font-semibold">
+                A CBRS Group Company
+              </a>
             </div>
             <div>
               <h3 className="text-white font-bold text-lg mb-4">Contact</h3>
               <div className="space-y-2">
-                <a href="tel:8329392727" className="flex items-center gap-2 hover:text-white transition-colors">
-                  <Phone size={18} /> (832) 939-2727
+                <a href="tel:8326080535" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <Phone size={18} /> (832) 608-0535
                 </a>
                 <a href="mailto:info@waterdamageestimating.com" className="flex items-center gap-2 hover:text-white transition-colors">
                   <Mail size={18} /> info@waterdamageestimating.com
@@ -558,9 +561,28 @@ function App() {
               <h3 className="text-white font-bold text-lg mb-4">Service Areas</h3>
               <p>Houston, Katy, Sugar Land, The Woodlands, Pearland, Cypress, Spring, Humble, Pasadena, Baytown, and surrounding areas.</p>
             </div>
+            <div>
+              <h3 className="text-white font-bold text-lg mb-4">Follow CBRS Group</h3>
+              <div className="flex gap-4">
+                <a href="https://www.facebook.com/profile.php?id=61564870028363" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Facebook">
+                  <Facebook size={24} />
+                </a>
+                <a href="https://www.instagram.com/cbrsgroup" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Instagram">
+                  <Instagram size={24} />
+                </a>
+                <a href="https://www.tiktok.com/@cbrs.group" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="TikTok">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                  </svg>
+                </a>
+                <a href="https://youtube.com/@cbrsgroup" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="YouTube">
+                  <Youtube size={24} />
+                </a>
+              </div>
+            </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm">
-            <p>&copy; {new Date().getFullYear()} Water Damage Estimating. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Water Damage Estimating. A CBRS Group Company. All rights reserved.</p>
           </div>
         </div>
       </footer>
